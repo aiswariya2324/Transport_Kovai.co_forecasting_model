@@ -1,4 +1,33 @@
-INSIGHTS
+1.Dataset Overview
+Size: 1,918 rows, 7 columns.
+Services: Includes Local Route, Light Rail, Peak Service, Rapid Route, School, and Other.
+Period: Daily passenger counts over several years, with minor missing data addressed.
+
+2.Demand Trends:
+Local Route and Rapid Route dominate in usage, reflecting consistent daily demand.
+Light Rail shows an upward trend, suggesting growing adoption.
+School has strong seasonality tied to academic calendars.
+Peak Service exhibits weekday spikes, driven by commuter behavior.
+
+3.Correlations:
+Strong positive correlation between Local Route and Rapid Route.
+School operates independently, with distinct seasonal demand.
+
+4.Seasonality:
+Seasonal peaks in School and Local Route align with academic and holiday schedules.
+
+5.Recommendations
+Capacity Management:
+Scale Local Route and Rapid Route capacity during peak periods.
+Focus Peak Service enhancements on weekday demand.
+Targeted Optimization:
+Adjust School services to match academic schedules; reduce during holidays.
+Strategic Investments:
+Enhance Light Rail to capitalize on its growth trend.
+Event Planning:
+Monitor Rapid Route spikes to better manage urban event demands.
+
+6.INSIGHTS
 1.Peak Service - Analysis indicates significant peaks in service usage during weekdays, specifically between 7:00 AM - 9:00 AM and 4:00 PM - 6:00 PM. Weekend ridership shows a marked decline, highlighting lower utilization rates.
 Which gives an insight that there are rush hours during working hours and the timings for children using transport for bus facilites.
 2.Light Rail Popularity - Data reveals a 10% increase in Light Rail usage over the past six months. Notably, the highest ridership levels are recorded on weekends, suggesting a shift in user preferences for leisure travel.
