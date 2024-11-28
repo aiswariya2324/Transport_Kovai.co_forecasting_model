@@ -1,0 +1,34 @@
+1. Algorithm Overview
+For this analysis, Facebook Prophet was selected as the forecasting algorithm due to its ability to handle:
+- Trend Components: Detects and models long-term growth or decline.
+- Seasonality: Automatically identifies and incorporates daily, weekly, and yearly seasonality.
+- Missing Data: Robust to missing values and outliers.
+- Future Predictions: Generates forecasts for a defined time horizon with confidence intervals.
+
+Prophet is well-suited for time series with non-linear trends and multiple seasonalities, making it ideal for our dataset with fluctuating public transport demands.
+
+2. Data Preparation
+To align with Prophet's requirements:
+- Date (`ds`): The `Date` column was formatted as the time index.
+- Values (`y`): Passenger counts for each service type were used as the target variable.
+- Missing values were replaced with median values to ensure data consistency.
+
+3. Model Output
+- Predicted Values (`yhat`): Central forecasted values for each service type.
+- Confidence Intervals (`yhat_lower`, `yhat_upper`): 95% uncertainty bounds to assess prediction reliability.
+
+4. Strengths of Prophet
+- Flexibility: Adapts to complex seasonal patterns with minimal manual configuration.
+- Scalability: Efficiently handles large datasets across multiple service types.
+- Interpretability: Easy-to-interpret results with visual trend and seasonality decomposition.
+
+This model’s strengths and configurable parameters make it ideal for forecasting public transport demand with varying trends and seasonality.
+
+5. Model Paramters
+1. Growth - The growth parameter determines the overall trend in the data. By default, it is set to linear, which assumes a constant growth or decline rate over time. If the data has a natural limit (e.g., a maximum capacity or saturation point), the logistic option is used. For instance, in passenger transport systems with infrastructure limitations, logistic growth may be more realistic.
+2. Seasonality - Prophet automatically models seasonality at different time scales. The yearly_seasonality parameter captures recurring patterns across the year, such as school holidays or festive seasons. Similarly, weekly_seasonality identifies demand fluctuations over the week (e.g., lower usage on weekends
+3. Changepoints - Changepoints mark significant trend shifts in the time series, such as a sudden increase or decrease in passenger demand.
+4. Holidays - The holidays parameter allows the inclusion of specific events or public holidays that may impact the data.
+5. Uncertainty - The interval_width parameter controls the confidence interval around forecasts, with a default of 0.80 (80% prediction interval).
+
+
